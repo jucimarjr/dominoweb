@@ -1,0 +1,36 @@
+{"frames": {
+
+"buscar_1.png":
+{
+	"frame": {"x":1,"y":1,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"buscar_2.png":
+{
+	"frame": {"x":1,"y":85,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"buscar_3.png":
+{
+	"frame": {"x":1,"y":169,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "btn_buscar.png",
+	"format": "RGBA8888",
+	"size": {"w":242,"h":252},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:31d004f2dd1aca3600200d9a726b9882:45f8a18dcbb5078a93efb9fea90c5338:d336f20534b4cbe43e48bd2f253423e2$"
+}
+}

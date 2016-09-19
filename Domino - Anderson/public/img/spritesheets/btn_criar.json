@@ -1,0 +1,36 @@
+{"frames": {
+
+"criar_1.png":
+{
+	"frame": {"x":1,"y":1,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"criar_2.png":
+{
+	"frame": {"x":1,"y":85,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"criar_3.png":
+{
+	"frame": {"x":1,"y":169,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "btn_criar.png",
+	"format": "RGBA8888",
+	"size": {"w":242,"h":252},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:213b34dfecec3129c0e7275023bbf7b3:96dbf42c1f3eee32c7652da36e6da50e:4e40f6639ebd5cf289973cae4f8e25c8$"
+}
+}

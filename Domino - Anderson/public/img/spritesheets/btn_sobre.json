@@ -1,0 +1,36 @@
+{"frames": {
+
+"sobre_1.png":
+{
+	"frame": {"x":1,"y":1,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"sobre_2.png":
+{
+	"frame": {"x":1,"y":85,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"sobre_3.png":
+{
+	"frame": {"x":1,"y":169,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "btn_sobre.png",
+	"format": "RGBA8888",
+	"size": {"w":242,"h":252},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ddbd49fc1809dd57b52c930b7184f8cb:1b2875f62d93f20f7be6de3ddff215e8:55f8958e30b788dc1132434378612037$"
+}
+}

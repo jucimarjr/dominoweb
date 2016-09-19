@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/socket.io/socket.io.js"></script>
+    <title></title>
+</head>
+<body>
+    Jogador: <input id="nomeJogador">
+    <button onclick="conectar()">CONECTAR</button>
+    <p></p>
+    Sala: <input id="nomeSala">
+    <button onclick="criar_sala()">CRIAR</button>
+    <p></p>
+    Salas Disponíveis:
+    <select id="salas"></select>
+    <button onclick="buscar_salas()">ATUALIZAR</button>
+    <p></p>
+    <button onclick="entrar_sala()">ENTRAR</button>
+    <p></p>
+    <input id="mensagem">
+    <button onclick="enviar_mensagem()">Enviar Mensagem</button>
+    <p></p>
+    <textarea id="mensagens"></textarea>
+</body>
+<script>
+
+    var socket = null;
+    var nomeJogador = '';
+
+    var inicia_socket = function(){
+        socket = io.connect('/');
+        socket.on('connect', function(){
+            nomeJogador = document.getElementById('nomeJogador').value;
+            socket.emit('adicionarJogador', {nomeJogador: nomeJogador});
+        });
+        socket.on('salasDisponiveis', function(dados){
+            var select = document.getElementById('salas');
+            for(var index in dados)
+                select.options[select.options.length] = new Option(dados[index].sala, index);
+        });
+        socket.on('mensagem', function(dados){
+            console.log(dados);
+            var textarea = document.getElementById('mensagens');
+            textarea.value += dados.msg + '\n';
+        });
+    };
+
+    var conectar = function(){
+        console.log('conectar');
+        inicia_socket();
+    };
+
+    var enviar_mensagem = function(){
+        var texto = document.getElementById('mensagem').value;
+        var select = document.getElementById('salas');
+        var nomeSala = select.options[select.selectedIndex].text;
+        socket.emit('mensagemSala', {nomeSala: nomeSala, msg:texto});
+    };
+
+    var criar_sala = function(){
+        var nome_sala = document.getElementById('nomeSala').value;
+        socket.emit('criarSala', {nomeSala:nome_sala});
+    };
+
+    var buscar_salas = function(){
+        socket.emit('buscarSalas', {nomeJogador:nomeJogador});
+    };
+
+    var entrar_sala = function(){
+        var select = document.getElementById('salas');
+        var nomeSala = select.options[select.selectedIndex].text;
+        var dadosJogador = {
+            nome: nomeJogador
+        };
+        socket.emit('entrarSala', {dadosJogador:dadosJogador, nomeSala:nomeSala});
+    };
+
+</script>
+</html>

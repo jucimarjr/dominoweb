@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Dominó Online</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/phaser.min.js"></script>
+        <script src="js/states/init.js"></script>
+        <script src="js/states/logo.js"></script>
+        <script src="js/states/main.js"></script>
+        <script src="js/states/lobby.js"></script>
+        <script src="js/states/chat.js"></script>
+        <script src="js/prefabs/peca.js"></script>
+        <script src="js/prefabs/mesa.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-9">
+                <div id="phaser"></div>
+            </div>
+            <div class="col-md-3" id="chat" style="height: 600px; display: none;">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Jogadores
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="form-control" id="jogador1"></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="form-control" id="jogador2"></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="form-control" id="jogador3"></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="form-control" id="jogador4"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Chat
+                    </div>
+                    <div class="panel-body">
+                        <textarea readonly="true" style="height:225px;" class="form-control" id="chatText">
+                        </textarea>
+                    </div>
+                    <div class="panel-footer">
+                        <input id="chatInput"><button class="btn btn-primary" onclick="enviarMsg()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

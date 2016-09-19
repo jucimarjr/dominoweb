@@ -1,0 +1,36 @@
+{"frames": {
+
+"voltar_1.png":
+{
+	"frame": {"x":1,"y":1,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"voltar_2.png":
+{
+	"frame": {"x":1,"y":85,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"voltar_3.png":
+{
+	"frame": {"x":1,"y":169,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "btn_voltar.png",
+	"format": "RGBA8888",
+	"size": {"w":242,"h":252},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:89ad2eda2dd03fef33045bc2c750636b:984efd3be3f3bc761d2d55e771f0c589:6def250683e2057852667a2af8beff6c$"
+}
+}

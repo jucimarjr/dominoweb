@@ -1,0 +1,36 @@
+{"frames": {
+
+"nova_1.png":
+{
+	"frame": {"x":1,"y":1,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"nova_2.png":
+{
+	"frame": {"x":1,"y":85,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+},
+"nova_3.png":
+{
+	"frame": {"x":1,"y":169,"w":240,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":82},
+	"sourceSize": {"w":240,"h":82}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "btn_nova.png",
+	"format": "RGBA8888",
+	"size": {"w":242,"h":252},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:737ea51abdf14cfb957883a3c3e3e1e2:9725a93d233af3b219700507fbc6d900:5d7d7c6df484110794738c6eabf73d93$"
+}
+}
