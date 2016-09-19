@@ -71,7 +71,7 @@ io.sockets.on('connection', function(socket){
 
         //SORTEIO
 
-        var pecas = lista_pecas;
+        var pecas = lista_pecas.slice();
         salas[data.nomeSala]['sorteio'] = [];
         while(pecas.length > 0){
             var pecas_jogador = [];
